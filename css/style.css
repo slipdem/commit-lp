@@ -1,0 +1,53 @@
+@import url('fonts.css');
+@import url('null.css');
+:root {
+	--color-black: #000000;
+	--color-white: #ffffff;
+	--color-milk-white: #f7f5f5;
+	--color-red: #e3000b;
+	--color-grey: #616161;
+	--color-light-dark: #171212;
+}
+/* ---------------------- */
+[class*='__container'] {
+	max-width: 1400px;
+	padding-inline: 15px;
+	margin: 0 auto;
+}
+/* ---------------------- */
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.wrapper > .main {
+	flex-grow: 1;
+}
+
+/* #region HERO */
+.hero {
+	color: #f7f5f5;
+}
+.hero__container {
+	background-color: var(--color-red);
+	min-height: 100svh;
+	border-radius: 40px;
+	padding: 28px;
+}
+.hero__header {
+	display: flex;
+	justify-content: space-between;
+}
+.hero__content {
+}
+/* #endregion */
+/* #region ABOUT */
+.about {
+}
+/* #endregion */
+/* #region CASE */
+.case {
+}
+/* #endregion */

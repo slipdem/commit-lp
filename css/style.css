@@ -6,7 +6,7 @@
 	--color-white: #ffffff;
 	--color-milk-white: #f7f5f5;
 	--color-red: #e3000b;
-	--color-grey: #616161;
+	--color-grey: #606060;
 	--color-light-dark: #171212;
 	--font-brotesk: 'Brotesk', sans-serif;
 	--font-dmsans: 'DM Sans', sans-serif;
@@ -24,7 +24,7 @@ body {
 /* ---------------------- */
 [class*='__container'] {
 	max-width: 1400px;
-	padding-inline: 15px;
+	/* padding-inline: 15px; */
 	margin: 0 auto;
 }
 /* ---------------------- */
@@ -42,6 +42,40 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 140px;
+}
+/* section */
+.section__header {
+	display: flex;
+	justify-content: space-between;
+	gap: 80px;
+	margin: 0 auto;
+	padding-bottom: 80px;
+	max-width: 1320px;
+}
+.section__title {
+	font-family: var(--font-transforma);
+	font-size: 24px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: var(--color-red);
+	min-width: 165px;
+}
+.section__title::before {
+	content: url('../images/section_title_icon.png');
+	position: relative;
+	bottom: -10px;
+	margin-right: 24px;
+	height: 34px;
+}
+.section__label {
+	font-size: 48px;
+	line-height: 1;
+}
+.section__description {
+	color: var(--color-grey);
+	font-size: 20px;
+	font-family: var(--font-darker);
+	line-height: 27px;
 }
 /* #endregion */
 /* #region UI */
@@ -109,8 +143,10 @@ body {
 .header__title {
 	font-family: var(--font-syne);
 	font-size: 60px;
+	line-height: 1;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
+	padding-top: 20px;
 }
 
 .hero__content {
@@ -121,15 +157,58 @@ body {
 	font-family: var(--font-transforma);
 	margin-bottom: 28px;
 }
-.hero__label{
+.hero__label {
 	font-size: 40px;
 	line-height: 48px;
 	max-width: 966px;
-
 }
 /* #endregion */
 /* #region ABOUT */
 .about {
+}
+.about__container {
+	max-width: 1320px;
+}
+
+.about__description {
+	max-width: 400px;
+}
+.about__content {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+.about__list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+.about__item:nth-child(1) {
+	grid-column: span 2;
+	max-height: 179px;
+	padding: 0;
+}
+
+.about__item {
+	border-radius: 24px;
+	background-color: var(--color-milk-white);
+	padding: 31px 20px;
+}
+.about__item--title {
+	color: var(--color-red);
+	font-size: 68px;
+	line-height: 48px;
+	margin-bottom: 20px;
+}
+.about__item--text {
+	font-size: 34px;
+	line-height: 48px;
+}
+.about__main-img {
+	background-color: var(--color-red);
+	flex-basis: 402px;
+	border-radius: 24px;
+	overflow: hidden;
 }
 /* #endregion */
 /* #region CASE */

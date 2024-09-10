@@ -9,7 +9,7 @@
 	--color-red: #e3000b;
 	--color-red-bg: #950e13;
 	--color-grey: #606060;
-	--color-light-dark: #171212;
+	--color-light-dark: #171313;
 	--color-progress-bar: #efefef;
 	--font-brotesk: 'Brotesk', sans-serif;
 	--font-dmsans: 'DM Sans', sans-serif;
@@ -27,15 +27,16 @@ body {
 /* ---------------------- */
 [class*='__container'] {
 	max-width: 1400px;
-	/* padding-inline: 15px; */
 	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
 }
 /* ---------------------- */
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-	padding: 20px;
 	padding-bottom: 0;
 }
 .wrapper > .main {
@@ -218,17 +219,12 @@ body {
 .case {
 	padding-bottom: 62px;
 }
-
 .case__description {
 	max-width: 635px;
-}
-
-.case__content {
 }
 .case .case__item {
 	display: flex;
 	flex-direction: column;
-
 	max-width: 1280px;
 	height: 820px;
 	background: url('../images/case/bg_case-02.webp') center center no-repeat;
@@ -239,7 +235,6 @@ body {
 .case .case__first {
 	background: url('../images/case/bg_case-01.webp') center center no-repeat;
 }
-
 .case .case__item--top {
 	overflow: hidden;
 	text-align: left;
@@ -320,5 +315,70 @@ body {
 	content: url(../images/case/arrow-left.svg) !important;
 	position: relative !important;
 	top: -7px !important;
+}
+/* #endregion */
+/* #region FOOTER */
+.footer {
+	background-color: var(--color-light-dark);
+	color: var(--color-milk-white);
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.footer__container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+.footer__info {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	border-bottom: 1px solid var(--color-grey);
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+.footer__logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer__title {
+	font-family: var(--font-syne);
+	font-size: 34px;
+	line-height: 1;
+	letter-spacing: 0.3px;
+}
+.footer__label {
+	font-size: 24px;
+	line-height: 28px;
+	color: var(--color-white);
+}
+.info__list {
+}
+.info__list .info__heading {
+	font-family: var(--font-transforma);
+	font-size: 20px;
+	line-height: 28px;
+	color: var(--color-white);
+	margin-bottom: 7px;
+}
+.info__item {
+	font-size: 16px;
+	line-height: 26px;
+	color: var(--color-grey);
+}
+.footer_bottom {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__copyright {
+	font-size: 18px;
+	line-height: 20px;
+	font-family: var(--font-dmsans);
+	color: var(--color-grey);
+}
+.footer__social {
+	display: flex;
+	justify-content: space-between;
+	gap: 22px;
 }
 /* #endregion */
